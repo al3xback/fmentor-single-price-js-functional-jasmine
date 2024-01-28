@@ -20,11 +20,11 @@ describe('DOM', () => {
 	});
 
 	it("should be able to create element via 'createElement' function", () => {
-		const markEl = createElement('mark', 'highlight', 'Lorem ipsum');
-		document.body.appendChild(markEl);
+		const subtitleEl = createElement('p', 'highlight', 'Lorem ipsum');
+		document.body.appendChild(subtitleEl);
 
-		const isMarkElExist = !!document.querySelector('.highlight');
-		expect(isMarkElExist).not.toBeNull();
+		const issubtitleElExist = !!document.querySelector('.highlight');
+		expect(issubtitleElExist).not.toBeNull();
 	});
 
 	it("should be able to return element attribute data via 'createElementAttribute' function", () => {
